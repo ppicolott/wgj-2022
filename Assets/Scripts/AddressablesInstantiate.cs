@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public class Test : MonoBehaviour
+public class AddressablesInstantiate : MonoBehaviour
 {
     [SerializeField] private AssetLabelReference assetLabelReference;
 

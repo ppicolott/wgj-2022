@@ -22,8 +22,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - test
-    m_MainAsset: {fileID: 5941976200823598702, guid: 59b9144804faff241b2324811dab9178, type: 3}
-    m_TargetAsset: {fileID: 5941976200823598702, guid: 59b9144804faff241b2324811dab9178, type: 3}
+    - init
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 21e2c22d1eeda5a4393f0fafc4e33587, type: 2}
   m_SchemaSet:
