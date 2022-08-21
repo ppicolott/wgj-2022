@@ -1,0 +1,262 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Intro : MonoBehaviour
+{
+    [Space(10)]
+    [Header("Main Controls")]
+    [Space(5)]
+    private Camera cam;
+    private int introSequence;
+
+    [Space(10)]
+    [Header("Images")]
+    [Space(5)]
+    public GameObject one;
+    public GameObject two;
+    public GameObject three;
+    public GameObject four;
+    public GameObject five;
+    public GameObject six;
+    public GameObject seven;
+    public GameObject eight;
+    public GameObject nine;
+    public GameObject ten;
+    public GameObject eleven;
+    public GameObject twelve;
+
+    private void Start()
+    {
+        cam = Camera.main;
+        introSequence = 1;
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame
+            || Gamepad.current != null && Gamepad.current.buttonWest.wasPressedThisFrame)
+        {
+            PreviousSequence();
+        }
+        if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame
+            || Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
+        {
+            NextSequence();
+        }
+
+        switch (introSequence)
+        {
+            case 1:
+                one.SetActive(true);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 2:
+                one.SetActive(false);
+                two.SetActive(true);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 3:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(true);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 4:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(true);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 5:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(true);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 6:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(true);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 7:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(true);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 8:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(true);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 9:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(true);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 10:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(true);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+            case 11:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(true);
+                twelve.SetActive(false);
+                break;
+            case 12:
+                one.SetActive(false);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(true);
+                break;
+            case 13:
+                UnityEngine.SceneManagement.SceneManager.LoadScene("LevelOne");
+                break;
+            default:
+                one.SetActive(true);
+                two.SetActive(false);
+                three.SetActive(false);
+                four.SetActive(false);
+                five.SetActive(false);
+                six.SetActive(false);
+                seven.SetActive(false);
+                eight.SetActive(false);
+                nine.SetActive(false);
+                ten.SetActive(false);
+                eleven.SetActive(false);
+                twelve.SetActive(false);
+                break;
+        }
+    }
+
+    public void NextSequence()
+    {
+        if (introSequence > 12)
+        {
+            introSequence = 13;
+        }
+        else
+        {
+            introSequence += 1;
+        }
+    }
+
+    public void PreviousSequence()
+    {
+        if (introSequence < 1)
+        {
+            introSequence = 1;
+        }
+        else
+        {
+            introSequence -= 1;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using TMPro;
+using static Unity.VisualScripting.Icons;
+using System;
+using UnityEngine.UIElements;
+
+public class MainMenuSelector : MonoBehaviour
+{
+    public static MainMenuSelector current;
+
+    private int selector;
+
+    [Space(10)]
+    [Header("Button")]
+    [Space(5)]
+    public GameObject newGameButton;
+    public GameObject settingsButton;
+    public GameObject creditsButton;
+    public GameObject exitButton;
+
+    [Space(10)]
+    [Header("Language")]
+    [Space(5)]
+    public TextMeshProUGUI newGameText;
+    public TextMeshProUGUI settingsText;
+    public TextMeshProUGUI creditsText;
+    public TextMeshProUGUI exitText;
+
+    [Space(10)]
+    [Header("Credits Screen")]
+    [Space(5)]
+    public GameObject creditsImage;
+    public TextMeshProUGUI credits;
+
+    [Space(10)]
+    [Header("Settings")]
+    [Space(5)]
+    public GameObject canvasMainMenu;
+    public GameObject canvasSettings;
+
+    void Start()
+    {
+        current = this;
+        selector = 0;
+    }
+    public void PointerOn()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        selector = -1;
+    }
+
+    void Update()
+    {
+        LanguageCheck();
+
+        if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame) //dpad.ReadValueFromPreviousFrame() == new Vector2(0, 1)
+        {
+            //MusicSFXControl.currentMSFX.SFXPlay();
+            if (selector <= 0)
+            {
+                selector = 3;
+            }
+            else
+            {
+                selector -= 1;
+            }
+        }
+
+        if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame ||
+             Gamepad.current != null && Gamepad.current.dpad.right.wasPressedThisFrame)
+        {
+            //MusicSFXControl.currentMSFX.SFXPlay();
+            if (selector >= 3)
+            {
+                selector = 0;
+            }
+            else
+            {
+                selector += 1;
+            }
+        }
+
+        if(selector == 0)
+        {
+            EventSystem.current.SetSelectedGameObject(newGameButton);
+            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+                Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+            {
+                NewGame();
+            }
+        }
+        else if (selector == 1)
+        {
+            EventSystem.current.SetSelectedGameObject(settingsButton);
+            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+                Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+            {
+                Settings();
+            }
+        }
+        if (selector == 2)
+        {
+            EventSystem.current.SetSelectedGameObject(creditsButton);
+            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+                Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+            {
+                Credits();
+            }
+        }
+        else if (selector == 3)
+        {
+            EventSystem.current.SetSelectedGameObject(exitButton);
+            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+                Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+            {
+                QuitGame();
+            }
+        }
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.backspaceKey.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            BackFromCreditsScreen();
+        }
+    }
+
+    public void LanguageCheck()
+    {
+        if (AudioLangController.current.english)
+        {
+            newGameText.text = "New Game - Demo";
+            settingsText.text = "Settings";
+            creditsText.text = "Credits";
+            exitText.text = "Exit";
+        }
+        else if(AudioLangController.current.portuguese)
+        {
+            newGameText.text = "Novo Jogo - Demo";
+            settingsText.text = "Configurações";
+            creditsText.text = "Créditos";
+            exitText.text = "Sair";
+        }
+        else if(AudioLangController.current.spanish)
+        {
+            newGameText.text = "Nueva Partida - Demo";
+            settingsText.text = "Opciones";
+            creditsText.text = "Creditos";
+            exitText.text = "Salir";
+        }
+    }
+
+    public void NewGame()
+    {
+        selector = 0;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Intro");
+    }
+
+    public void Settings()
+    {
+        selector = 1;
+        canvasMainMenu.SetActive(false);
+        canvasSettings.SetActive(true);
+    }
+
+    public void Credits()
+    {
+        selector = 2;
+        newGameButton.SetActive(false);
+        settingsButton.SetActive(false);
+        creditsButton.SetActive(false);
+        creditsImage.SetActive(true);
+        if (AudioLangController.current.english)
+        {
+            credits.text = "Art - Fefis";
+        }
+        else if (AudioLangController.current.portuguese)
+        {
+            credits.text = "Arte - Fefis";
+        }
+        else if (AudioLangController.current.spanish)
+        {
+            credits.text = "Arte ES - Fefis";
+        }
+        exitButton.SetActive(false);
+    }
+
+    public void BackFromCreditsScreen()
+    {
+        newGameButton.SetActive(true);
+        settingsButton.SetActive(true);
+        creditsButton.SetActive(true);
+        creditsImage.SetActive(false);
+        exitButton.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        selector = 3;
+        Application.Quit();
+    }
+}
