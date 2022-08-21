@@ -58,13 +58,13 @@ public class PlayerControls : MonoBehaviour
     {
         controllers.Enable();
 
-        controllers.Scenario.Move.performed += Move;
-        controllers.Scenario.Rotate.performed += Rotate;
+        controllers.Player.Move.performed += Move;
+        //controllers.Player.Rotate.performed += Rotate;
     }
     private void OnDisable()
     {
-        controllers.Scenario.Move.performed -= Move;
-        controllers.Scenario.Rotate.performed -= Rotate;
+        controllers.Player.Move.performed -= Move;
+        //controllers.Player.Rotate.performed -= Rotate;
 
         controllers.Disable();
     }

@@ -45,6 +45,12 @@ public class Intro : MonoBehaviour
         {
             NextSequence();
         }
+        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame
+            || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+        {
+            Duck.life = 75;
+            introSequence = 13;
+        }
 
         switch (introSequence)
         {
@@ -217,6 +223,7 @@ public class Intro : MonoBehaviour
                 twelve.SetActive(true);
                 break;
             case 13:
+                Duck.life = 75;
                 UnityEngine.SceneManagement.SceneManager.LoadScene("LevelOne");
                 break;
             default:

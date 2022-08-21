@@ -240,17 +240,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_PointAction: {fileID: -7842050846690803674, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_MoveAction: {fileID: -5356188807021102596, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_SubmitAction: {fileID: -12884751285843747, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_CancelAction: {fileID: 7893370391276796932, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_LeftClickAction: {fileID: 1683201721918012449, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_MiddleClickAction: {fileID: 3271873351765985147, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_RightClickAction: {fileID: -1281478138915678187, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_ScrollWheelAction: {fileID: 2314355620084694694, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 3080838088349407690, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: -4553952488256555322, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_PointAction: {fileID: 5447596097656898681, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_MoveAction: {fileID: 3293416928576933121, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_SubmitAction: {fileID: 4910188683949495721, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_CancelAction: {fileID: 6619859870417963595, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_LeftClickAction: {fileID: -8169405425580746055, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_MiddleClickAction: {fileID: -4813617378922537975, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_RightClickAction: {fileID: -6670295590966520990, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_ScrollWheelAction: {fileID: 7774558958412215437, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 533886475581132157, guid: a0727e17685be784582b673513cd2ec1, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 6313489259457163788, guid: a0727e17685be784582b673513cd2ec1, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -1636,8 +1636,8 @@ Canvas:
   m_GameObject: {fileID: 1949675337}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1409015719}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1661,9 +1661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: a0727e17685be784582b673513cd2ec1, type: 3}
   m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
+  m_UIInputModule: {fileID: 142111384}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1730,7 +1730,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1409015719}
 --- !u!1 &2014402541
 GameObject:
   m_ObjectHideFlags: 0
