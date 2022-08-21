@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using TMPro;
-using static Unity.VisualScripting.Icons;
 
 public class SettingsSelector : MonoBehaviour
 {

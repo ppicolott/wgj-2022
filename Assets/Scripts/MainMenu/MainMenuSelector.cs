@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using TMPro;
-using static Unity.VisualScripting.Icons;
-using System;
-using UnityEngine.UIElements;
 
 public class MainMenuSelector : MonoBehaviour
 {
