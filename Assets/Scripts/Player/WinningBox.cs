@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class WinningBox : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.gameObject.name.Contains("Duck"))
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
-        }
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
     }
 }
