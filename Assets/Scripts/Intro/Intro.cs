@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Intro : MonoBehaviour
 {
     [Space(10)]
     [Header("Main Controls")]
     [Space(5)]
-    private Camera cam;
     private int introSequence;
+    public GameObject leftKnob;
+    public GameObject rightKnob;
+    public float timerKnob;
 
     [Space(10)]
     [Header("Images")]
@@ -29,12 +33,26 @@ public class Intro : MonoBehaviour
 
     private void Start()
     {
-        cam = Camera.main;
+        timerKnob = 0.5f;
         introSequence = 1;
     }
 
     private void Update()
     {
+        timerKnob -= Time.deltaTime;
+
+        if (timerKnob <= 0)
+        {
+            leftKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            rightKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        }
+        if (timerKnob <= -0.5f)
+        {
+            leftKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+            rightKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+            timerKnob = 0.5f;
+        }
+
         if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame
             || Gamepad.current != null && Gamepad.current.buttonWest.wasPressedThisFrame)
         {
