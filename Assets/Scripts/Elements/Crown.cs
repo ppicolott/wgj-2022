@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinningBox : MonoBehaviour
+public class Crown : MonoBehaviour
 {
     public AudioSource sucesso;
     private float timer;

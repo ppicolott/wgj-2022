@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerInputs : MonoBehaviour
 {
@@ -9,6 +11,10 @@ public class PlayerInputs : MonoBehaviour
 
     float rotationSpeed;
     float positionSpeed;
+
+    Vector2 mousePos;
+    Vector2 lookAt;
+    float angle;
 
     void Start()
     {
@@ -32,6 +38,16 @@ public class PlayerInputs : MonoBehaviour
             rotationVector.z -= rotationSpeed;
             transform.rotation = Quaternion.Euler(rotationVector);
         }
+
+        /*
+        if(Mouse.current.middleButton.isPressed)
+        {
+            mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            lookAt = mousePos - gameObject.GetComponent<Rigidbody2D>().position;
+            angle = Mathf.Atan2(lookAt.y, lookAt.x) * Mathf.Rad2Deg + 270f;
+            gameObject.GetComponent<Rigidbody2D>().rotation = angle;
+        }
+        */
 
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {

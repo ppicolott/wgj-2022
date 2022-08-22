@@ -53,18 +53,18 @@ public class Victory : MonoBehaviour
             timerKnob = 0.5f;
         }
 
-        if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame
-            || Gamepad.current != null && Gamepad.current.buttonWest.wasPressedThisFrame)
+        if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonWest.wasPressedThisFrame)
         {
             PreviousSequence();
         }
-        if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame
-            || Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
+        if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
         {
             NextSequence();
         }
-        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame
-            || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+        if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
         {
             Duck.life = 75;
             introSequence = 4;
