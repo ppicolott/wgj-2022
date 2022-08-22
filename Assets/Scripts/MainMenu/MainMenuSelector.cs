@@ -31,7 +31,6 @@ public class MainMenuSelector : MonoBehaviour
     [Header("Credits Screen")]
     [Space(5)]
     public GameObject creditsImage;
-    public TextMeshProUGUI credits;
 
     [Space(10)]
     [Header("Settings")]
@@ -171,18 +170,6 @@ public class MainMenuSelector : MonoBehaviour
         settingsButton.SetActive(false);
         creditsButton.SetActive(false);
         creditsImage.SetActive(true);
-        if (AudioLangController.current.english)
-        {
-            credits.text = "Art - Fefis";
-        }
-        else if (AudioLangController.current.portuguese)
-        {
-            credits.text = "Arte - Fefis";
-        }
-        else if (AudioLangController.current.spanish)
-        {
-            credits.text = "Arte ES - Fefis";
-        }
         exitButton.SetActive(false);
     }
 

@@ -5,10 +5,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class PlayerInputs : MonoBehaviour
+public class GameControls : MonoBehaviour
 {
-    Rigidbody2D rigidBody;
-
     float rotationSpeed;
     float positionSpeed;
 
@@ -18,8 +16,6 @@ public class PlayerInputs : MonoBehaviour
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
-
         rotationSpeed = 1.1f;
         positionSpeed = 0.018f;
     }
