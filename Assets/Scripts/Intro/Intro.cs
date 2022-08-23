@@ -10,6 +10,7 @@ public class Intro : MonoBehaviour
     [Header("Main Controls")]
     [Space(5)]
     private int introSequence;
+    public GameObject introNine;
     public GameObject leftKnob;
     public GameObject rightKnob;
     public float timerKnob;
@@ -38,6 +39,23 @@ public class Intro : MonoBehaviour
 
     private void Update()
     {
+        if(!AudioLangController.current.audioSystem)
+        {
+            GetComponent<AudioSource>().mute = true;
+            if(introNine.activeInHierarchy)
+            {
+                introNine.GetComponent<AudioSource>().mute = true;
+            }
+        }
+        else
+        {
+            GetComponent<AudioSource>().mute = false;
+            if (introNine.activeInHierarchy)
+            {
+                introNine.GetComponent<AudioSource>().mute = false;
+            }
+        }
+
         timerKnob -= Time.deltaTime;
 
         if (timerKnob <= 0)

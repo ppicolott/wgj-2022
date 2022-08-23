@@ -6,6 +6,7 @@ public class Wall : MonoBehaviour
 {
     private Collider2D breakableWallCollider;
 
+    public GameObject brokenWallAudio;
     public GameObject brokenWallCollider;
     public Sprite brokenWallSprite;
 
@@ -13,12 +14,30 @@ public class Wall : MonoBehaviour
     {
         breakableWallCollider = GetComponent<Collider2D>();
     }
+
+    private void Update()
+    {
+        if (!AudioLangController.current.audioSystem)
+        {
+            if (brokenWallAudio.activeInHierarchy)
+            {
+                brokenWallAudio.GetComponent<AudioSource>().mute = true;
+            }
+        }
+        else
+        {
+            if (brokenWallAudio.activeInHierarchy)
+            {
+                brokenWallAudio.GetComponent<AudioSource>().mute = false;
+            }
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.gameObject.name.Contains("Rock"))
         {
             breakableWallCollider.enabled = false;
-            // brokenWallCollider.SetActive(true);
+            brokenWallCollider.SetActive(true);
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
 
             // if (collision.collider.gameObject.GetComponent<Rigidbody2D>().velocity.x > 0 ||

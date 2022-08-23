@@ -15,6 +15,7 @@ public class Victory : MonoBehaviour
     public GameObject rightKnob;
     public float timerKnob;
     public TextMeshProUGUI victoryText;
+    public static bool audioPlaying = true;
 
     [Space(10)]
     [Header("Images")]
@@ -31,11 +32,20 @@ public class Victory : MonoBehaviour
 
     private void Update()
     {
-        //CheckLanguage();
+        CheckLanguage();
 
         if (Mouse.current.rightButton.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame ||
             Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.backspaceKey.wasPressedThisFrame)
         {
+            if (AudioLangController.current.audioSystem)
+            {
+                audioPlaying = true;
+            }
+            else
+            {
+                audioPlaying = true;
+            }
+            AudioLangController.current.restart = true;
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
 
@@ -92,6 +102,15 @@ public class Victory : MonoBehaviour
                 if (Keyboard.current.anyKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame ||
                     Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
                 {
+                    if (AudioLangController.current.audioSystem)
+                    {
+                        audioPlaying = true;
+                    }
+                    else
+                    {
+                        audioPlaying = true;
+                    }
+                    AudioLangController.current.restart = true;
                     UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
                 }
                 break;
@@ -131,7 +150,7 @@ public class Victory : MonoBehaviour
     {
         if (AudioLangController.current.english)
         {
-            victoryText.text = "Victory!";
+            victoryText.text = "You win!";
         }
         if (AudioLangController.current.portuguese)
         {

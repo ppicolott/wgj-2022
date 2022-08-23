@@ -94,9 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3691702454093366880}
   - component: {fileID: 3691702454093366881}
-  - component: {fileID: 3691702454093366882}
-  - component: {fileID: 3691702454093366883}
-  - component: {fileID: 3691702454093366893}
   - component: {fileID: 3691702454093366894}
   - component: {fileID: 3691702454093366888}
   m_Layer: 0
@@ -174,62 +171,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3691702454093366882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691702454093366886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 7b10a1c551d58e443b93469ab077f1ff, type: 3}
-  m_NotificationBehavior: 3
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Scenario
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &3691702454093366883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691702454093366886}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4effc6fce1678e24c9973de0850b8f71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  positionSpeed: 0
---- !u!114 &3691702454093366893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3691702454093366886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e34be57488e8847b3bac4bb7d102bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &3691702454093366894
 Rigidbody2D:
   serializedVersion: 4
@@ -242,14 +183,14 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1000000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 7
 --- !u!60 &3691702454093366888
 PolygonCollider2D:
@@ -781,17 +722,19 @@ PolygonCollider2D:
       - {x: -1.38, y: -0.62}
       - {x: -1.37, y: -0.63}
       - {x: -1.0699999, y: -0.63}
-      - {x: -1.06, y: -0.64}
-      - {x: -0.84999996, y: -0.64}
-      - {x: -0.81, y: -0.59}
-      - {x: -0.81, y: -0.32}
-      - {x: -0.82, y: -0.31}
-      - {x: -0.82, y: -0.26999998}
-      - {x: -0.83, y: -0.26}
-      - {x: -0.83, y: -0.24}
-      - {x: -0.87, y: -0.19999999}
-      - {x: -0.89, y: -0.19999999}
-      - {x: -0.9, y: -0.19}
+      - {x: -1.0355263, y: -0.5980445}
+      - {x: -0.88146645, y: -0.587556}
+      - {x: -0.8589478, y: -0.41168982}
+      - {x: -0.9148879, y: -0.45005012}
+      - {x: -0.86594063, y: -0.39691812}
+      - {x: -0.8829325, y: -0.32748133}
+      - {x: -0.86195546, y: -0.25601482}
+      - {x: -0.8999253, y: -0.32293248}
+      - {x: -0.8649626, y: -0.25048876}
+      - {x: -0.8679409, y: -0.22063637}
+      - {x: -0.88748133, y: -0.2279703}
+      - {x: -0.8865038, y: -0.22097749}
+      - {x: -0.93146646, y: -0.20748132}
       - {x: -0.97999996, y: -0.19}
       - {x: -0.98999995, y: -0.19999999}
       - {x: -1, y: -0.19}

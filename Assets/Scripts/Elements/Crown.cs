@@ -17,6 +17,15 @@ public class Crown : MonoBehaviour
 
     private void Update()
     {
+        if (!AudioLangController.current.audioSystem)
+        {
+            sucesso.mute = true;
+        }
+        else
+        {
+            sucesso.mute = false;
+        }
+
         if (nextLevel)
         {
             timer -= Time.deltaTime;

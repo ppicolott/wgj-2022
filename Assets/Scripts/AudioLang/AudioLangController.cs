@@ -6,16 +6,32 @@ public class AudioLangController : MonoBehaviour
 {
     public static AudioLangController current;
     public static AudioSource audioSource;
-    public bool audioSystem;
+    public bool audioSystem = true;
+    public bool restart = false;
 
     public bool english = true;
     public bool portuguese = false;
     public bool spanish = false;
 
-    void Start()
+    private void Awake()
     {
         current = this;
-        audioSource = GetComponent<AudioSource>();
         audioSystem = true;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+    }
+
+    private void Update()
+    {
+        if (restart && Victory.audioPlaying || restart && GameOver.audioPlaying)
+        {
+            audioSystem = false;
+            audioSource.Stop();
+        }
+        if (restart && !Victory.audioPlaying || restart && !GameOver.audioPlaying)
+        {
+            audioSystem = true;
+            audioSource.Stop();
+        }
     }
 }
