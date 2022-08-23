@@ -9,9 +9,9 @@ public class AudioLangController : MonoBehaviour
     public bool audioSystem = true;
     public bool restart = false;
 
-    public bool english = true;
-    public bool portuguese = false;
-    public bool spanish = false;
+    public bool english;
+    public bool portuguese;
+    public bool spanish;
 
     private void Awake()
     {

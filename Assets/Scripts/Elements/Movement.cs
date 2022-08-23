@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        positionSpeed = 0.018f;
+        positionSpeed = 0.05f;
     }
 
     void Update()
@@ -29,6 +29,13 @@ public class Movement : MonoBehaviour
         if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
         {
             transform.position -= new Vector3(0, positionSpeed, 0);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Contains("Head") || collision.gameObject.name.Contains("Feet"))
+        {
+            collision.gameObject.transform.localPosition = Vector3.zero;
         }
     }
 }

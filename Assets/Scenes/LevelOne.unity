@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199340058}
   - component: {fileID: 199340059}
+  - component: {fileID: 199340060}
   m_Layer: 0
   m_Name: Movement
   m_TagString: Untagged
@@ -172,6 +173,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32af3468ddbafe43998e70e885c5313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &199340060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199340057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.1625147, y: -3.0513139}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 21.740675, y: 14.577958}
+  m_EdgeRadius: 1000000
 --- !u!1001 &636634205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -612,43 +639,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_GravityScale
-      value: 5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2969978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Size.y
-      value: 8.301771
+      value: 8.562721
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.50205934
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Offset.y
-      value: 4.568022
+      value: 4.569683
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Anchor.x
-      value: -0.5012877
+      value: -0.44435352
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Anchor.y
-      value: 0.11915827
+      value: 0.38008207
+      objectReference: {fileID: 0}
+    - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -4.202044
+      value: -4.150618
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -3.5702577
+      value: -3.5487578
+      objectReference: {fileID: 0}
+    - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_Motor.m_MaximumMotorForce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180425, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_SortingLayer
@@ -676,11 +727,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.067
+      value: -4.08
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.451
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8010,6 +8061,10 @@ PrefabInstance:
       value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 3691702454093366894, guid: a0403aae123011941abbeb6ff3ed84f6, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691702454093366894, guid: a0403aae123011941abbeb6ff3ed84f6, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
@@ -8044,6 +8099,18 @@ PrefabInstance:
     - target: {fileID: 1150927322, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
       propertyPath: m_Mass
       value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150927322, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150927322, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150927322, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5164338785613692004, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
       propertyPath: m_RootOrder

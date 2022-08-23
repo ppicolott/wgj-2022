@@ -54,9 +54,8 @@ public class MainMenuSelector : MonoBehaviour
         LanguageCheck();
 
         if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame ||
-            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame) //dpad.ReadValueFromPreviousFrame() == new Vector2(0, 1)
+            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame)
         {
-            //MusicSFXControl.currentMSFX.SFXPlay();
             if (selector <= 0)
             {
                 selector = 3;
@@ -70,7 +69,6 @@ public class MainMenuSelector : MonoBehaviour
         if (Keyboard.current.dKey.wasPressedThisFrame || Keyboard.current.rightArrowKey.wasPressedThisFrame ||
              Gamepad.current != null && Gamepad.current.dpad.right.wasPressedThisFrame)
         {
-            //MusicSFXControl.currentMSFX.SFXPlay();
             if (selector >= 3)
             {
                 selector = 0;

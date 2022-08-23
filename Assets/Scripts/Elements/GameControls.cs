@@ -11,7 +11,7 @@ public class GameControls : MonoBehaviour
 
     void Start()
     {
-        rotationSpeed = 1.1f;
+        rotationSpeed = 1.5f;
     }
 
     void Update()

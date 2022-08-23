@@ -301,4 +301,9 @@ public class Intro : MonoBehaviour
             introSequence -= 1;
         }
     }
+
+    public void SkipScreens()
+    {
+        introSequence = 13;
+    }
 }
