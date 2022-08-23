@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 1329.3333
     height: 310.00006
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 105
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 57
+  controlID: 44
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 58
+  controlID: 45
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 23
+  controlID: 46
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -321,15 +321,15 @@ MonoBehaviour:
     height: 997.3333
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
   - {fileID: 16}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 3
-  m_LastSelected: 4
+  m_Selected: 4
+  m_LastSelected: 3
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1003,8 +1003,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -21333.334
-    y: -20306
+    x: 0
+    y: 1070
     width: 817.6667
     height: 289.00006
   m_ViewDataDictionary: {fileID: 0}
@@ -1024,22 +1024,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/2D/Tapioca/Menu
+    - Assets/Scripts/Elements
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/2D/Tapioca/Menu
+  - Assets/Scripts/Elements
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Paula\Documents\[GameJam]\WGJ-2022\wgj-2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 54.99994}
-    m_SelectedIDs: 446c0000
-    m_LastClickedID: 27716
-    m_ExpandedIDs: 00000000246c0000266c0000286c00002a6c00002c6c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 114.99994}
+    m_SelectedIDs: 32640000
+    m_LastClickedID: 25650
+    m_ExpandedIDs: 000000000464000006640000086400000a6400000c64000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000246c0000266c0000286c00002a6c00002c6c0000
+    m_ExpandedIDs: 000000000464000006640000086400000a6400000c640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000064ca0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1197,7 +1197,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ac6bfeff006cfeff206efeff4a6efeff606ffeff886ffeffce6ffeffdabefeffb018ffff84b7ffff08bdffffaad4ffff40d7ffff68d7ffffacf4ffffb2f4ffffb6f4ffff306d00006e6d0000986d0000aa6d0000909a0000
+      m_ExpandedIDs: bae7fffff4e7fffff2e9fffffae9ffffeeeafffff4eaffff18ebffff20fbffff24fbffff966000008a9000006ca20000bea20000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1657,7 +1657,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
