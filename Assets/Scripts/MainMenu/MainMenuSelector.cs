@@ -142,7 +142,7 @@ public class MainMenuSelector : MonoBehaviour
         else if(AudioLangController.current.spanish)
         {
             newGameText.text = "Nueva Partida - Demo";
-            settingsText.text = "Opciones";
+            settingsText.text = "Ajustes";
             creditsText.text = "Creditos";
             exitText.text = "Salir";
         }

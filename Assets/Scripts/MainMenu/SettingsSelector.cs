@@ -169,15 +169,15 @@ public class SettingsSelector : MonoBehaviour
         }
         else if (AudioLangController.current.spanish)
         {
-            gameControlsText.text = "Controles del Juego";
+            gameControlsText.text = "Ajustes de mandos";
             languageText.text = "Idioma: Español";
             if (AudioLangController.current.audioSystem)
             {
-                audioText.text = "Sonido: Activado";
+                audioText.text = "Audio: Activado";
             }
             else if (!AudioLangController.current.audioSystem)
             {
-                audioText.text = "Sonido: Apagado";
+                audioText.text = "Audio: Apagado";
             }
             backText.text = "Volver al Menú de Inicio";
         }
@@ -200,7 +200,7 @@ public class SettingsSelector : MonoBehaviour
         else if (AudioLangController.current.spanish)
         {
             rotateText.text = "Girar";
-            moveText.text = "Muevete";
+            moveText.text = "Mover";
         }
         languageButton.SetActive(false);
         audioButton.SetActive(false);
