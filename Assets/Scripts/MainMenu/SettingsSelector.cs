@@ -117,15 +117,21 @@ public class SettingsSelector : MonoBehaviour
         else if (selector == 3)
         {
             EventSystem.current.SetSelectedGameObject(backButton);
-            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame ||
+            if (Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame ||
+                Keyboard.current.spaceKey.wasPressedThisFrame ||
                 Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 BackToMainMenu();
             }
         }
 
-        if(Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.backspaceKey.wasPressedThisFrame ||
-            Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame  || Mouse.current.rightButton.wasPressedThisFrame)
+        if(Keyboard.current.anyKey.wasPressedThisFrame ||
+            Mouse.current.rightButton.wasPressedThisFrame ||
+            Mouse.current.leftButton.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonWest.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame ||
+            Gamepad.current != null && Gamepad.current.buttonNorth.wasPressedThisFrame)
         {
             BackFromControlsScreen();
         }

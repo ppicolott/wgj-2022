@@ -9,9 +9,6 @@ public class GameControls : MonoBehaviour
 {
     float rotationSpeed;
 
-    // Vector3 mousePos;
-    // Vector3 lookAt;
-
     void Start()
     {
         rotationSpeed = 1.1f;
@@ -29,6 +26,7 @@ public class GameControls : MonoBehaviour
             var rotationVector = transform.rotation.eulerAngles;
             rotationVector.z += rotationSpeed;
             transform.rotation = Quaternion.Euler(rotationVector);
+            GameObject.Find("Movement").GetComponent<Transform>().rotation = Quaternion.Euler(rotationVector);
 
             var rotationVectorCam = GameObject.Find("Duck").transform.rotation.eulerAngles;
             rotationVectorCam.z += rotationSpeed;
@@ -39,6 +37,7 @@ public class GameControls : MonoBehaviour
             var rotationVector = transform.rotation.eulerAngles;
             rotationVector.z -= rotationSpeed;
             transform.rotation = Quaternion.Euler(rotationVector);
+            GameObject.Find("Movement").GetComponent<Transform>().rotation = Quaternion.Euler(rotationVector);
 
             var rotationVectorCam = GameObject.Find("Duck").transform.rotation.eulerAngles;
             rotationVectorCam.z -= rotationSpeed;
@@ -47,8 +46,8 @@ public class GameControls : MonoBehaviour
 
         // if (Mouse.current.rightButton.wasPressedThisFrame)
         // {
-        //     mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        //     lookAt = mousePos - GameObject.Find("Duck").transform.position;
+        //     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        //     Vector3 lookAt = mousePos - GameObject.Find("Duck").transform.position;
         //     float angle = Mathf.Atan2(lookAt.y, lookAt.x) * Mathf.Rad2Deg + 15f;
         //     GetComponent<Rigidbody2D>().rotation = angle;
         //     GameObject.Find("Duck").GetComponent<Rigidbody2D>().rotation = angle;
