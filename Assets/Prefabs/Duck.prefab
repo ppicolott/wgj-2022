@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 80123b227c9926a41a2ed9f435210191, type: 3}
-  m_Color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -324,7 +324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5164338785613692004}
   - component: {fileID: 5164338785613692005}
-  - component: {fileID: 5164338785613692000}
   - component: {fileID: 1150927322}
   m_Layer: 0
   m_Name: Duck
@@ -349,7 +348,7 @@ Transform:
   - {fileID: 5164338787179226788}
   - {fileID: 5164338787112869848}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5164338785613692005
 SpriteRenderer:
@@ -403,81 +402,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &5164338785613692000
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5164338785613692006}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.43, y: 1.99}
-    newSize: {x: 6.06, y: 10.15}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.625, y: -0.565}
-      - {x: 0.715, y: -0.36499998}
-      - {x: 0.715, y: -0.145}
-      - {x: 0.705, y: -0.055}
-      - {x: 0.635, y: 0.015}
-      - {x: 0.445, y: -0.044999998}
-      - {x: 0.36499998, y: -0.13499999}
-      - {x: 0.095, y: -0.074999996}
-      - {x: 0.105, y: 0.024999999}
-      - {x: 0.065, y: 0.345}
-      - {x: -0.044999998, y: 0.505}
-      - {x: 0.125, y: 0.625}
-      - {x: 0.205, y: 0.675}
-      - {x: 0.155, y: 0.865}
-      - {x: 0.095, y: 0.895}
-      - {x: -0.005, y: 0.895}
-      - {x: -0.015, y: 0.995}
-      - {x: -0.175, y: 0.995}
-      - {x: -0.265, y: 0.98499995}
-      - {x: -0.315, y: 0.92499995}
-      - {x: -0.435, y: 0.84499997}
-      - {x: -0.465, y: 0.765}
-      - {x: -0.325, y: 0.635}
-      - {x: -0.405, y: 0.355}
-      - {x: -0.625, y: 0.325}
-      - {x: -0.715, y: 0.265}
-      - {x: -0.715, y: 0.185}
-      - {x: -0.645, y: 0.095}
-      - {x: -0.545, y: -0.114999995}
-      - {x: -0.45499998, y: -0.405}
-      - {x: -0.375, y: -0.575}
-      - {x: -0.295, y: -0.655}
-      - {x: -0.13499999, y: -0.73499995}
-      - {x: -0.235, y: -0.765}
-      - {x: -0.275, y: -0.85499996}
-      - {x: -0.265, y: -0.885}
-      - {x: -0.155, y: -0.955}
-      - {x: -0.035, y: -0.935}
-      - {x: -0.015, y: -0.905}
-      - {x: 0.015, y: -0.815}
-      - {x: -0.005, y: -0.875}
-      - {x: -0.015, y: -0.91499996}
-      - {x: 0.024999999, y: -0.97499996}
-      - {x: 0.095, y: -0.995}
-      - {x: 0.155, y: -0.995}
-      - {x: 0.21499999, y: -0.965}
-      - {x: 0.275, y: -0.765}
-      - {x: 0.385, y: -0.755}
-      - {x: 0.565, y: -0.635}
-  m_UseDelaunayMesh: 0
 --- !u!50 &1150927322
 Rigidbody2D:
   serializedVersion: 4

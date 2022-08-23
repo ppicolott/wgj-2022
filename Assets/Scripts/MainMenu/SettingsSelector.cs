@@ -31,9 +31,9 @@ public class SettingsSelector : MonoBehaviour
     [Space(5)]
     [Header("Controls Screen")]
     [Space(5)]
-    public GameObject gameControlsImageUS;
-    public GameObject gameControlsImageBR;
-    public GameObject gameControlsImageES;
+    public GameObject gameControlsScreen;
+    public TextMeshProUGUI rotateText;
+    public TextMeshProUGUI moveText;
 
     [Space(10)]
     [Header("Settings")]
@@ -180,23 +180,21 @@ public class SettingsSelector : MonoBehaviour
     public void GameControlsButton()
     {
         gameControlsButton.SetActive(false);
+        gameControlsScreen.SetActive(true);
         if (AudioLangController.current.english)
         {
-            gameControlsImageUS.SetActive(true);
-            gameControlsImageBR.SetActive(false);
-            gameControlsImageES.SetActive(false);
+            rotateText.text = "Rotate";
+            moveText.text = "Move";
         }
         else if(AudioLangController.current.portuguese)
         {
-            gameControlsImageUS.SetActive(false);
-            gameControlsImageBR.SetActive(true);
-            gameControlsImageES.SetActive(false);
+            rotateText.text = "Rotacionar";
+            moveText.text = "Movimentar";
         }
         else if (AudioLangController.current.spanish)
         {
-            gameControlsImageUS.SetActive(false);
-            gameControlsImageBR.SetActive(false);
-            gameControlsImageES.SetActive(true);
+            rotateText.text = "Girar";
+            moveText.text = "Muevete";
         }
         languageButton.SetActive(false);
         audioButton.SetActive(false);
@@ -243,9 +241,7 @@ public class SettingsSelector : MonoBehaviour
     public void BackFromControlsScreen()
     {
         gameControlsButton.SetActive(true);
-        gameControlsImageUS.SetActive(false);
-        gameControlsImageBR.SetActive(false);
-        gameControlsImageES.SetActive(false);
+        gameControlsScreen.SetActive(false);
         languageButton.SetActive(true);
         audioButton.SetActive(true);
         backButton.SetActive(true);

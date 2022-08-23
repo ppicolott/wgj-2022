@@ -18,7 +18,7 @@ public class Wall : MonoBehaviour
         if (collision.collider.gameObject.name.Contains("Rock"))
         {
             breakableWallCollider.enabled = false;
-            brokenWallCollider.SetActive(true);
+            // brokenWallCollider.SetActive(true);
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
 
             // if (collision.collider.gameObject.GetComponent<Rigidbody2D>().velocity.x > 0 ||

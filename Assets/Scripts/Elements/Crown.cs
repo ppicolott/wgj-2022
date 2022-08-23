@@ -17,7 +17,7 @@ public class Crown : MonoBehaviour
 
     private void Update()
     {
-        if(nextLevel)
+        if (nextLevel)
         {
             timer -= Time.deltaTime;
             if (timer <= 0)
@@ -31,7 +31,11 @@ public class Crown : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        sucesso.Play();
-        nextLevel = true;
+        if (collision.gameObject.name.Contains("Head") || collision.gameObject.name.Contains("Feet"))
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+            sucesso.Play();
+            nextLevel = true;
+        }
     }
 }
