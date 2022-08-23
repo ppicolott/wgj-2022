@@ -458,6 +458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: colliderAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 4304902748716613073, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4304902748791433882, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
       propertyPath: brokenWallAudio
       value: 
@@ -465,6 +469,10 @@ PrefabInstance:
     - target: {fileID: 4304902748845606878, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
       propertyPath: m_Name
       value: colliderAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304902748845606881, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304902748850125767, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
       propertyPath: m_Name
@@ -477,6 +485,10 @@ PrefabInstance:
     - target: {fileID: 4304902749086104655, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
       propertyPath: m_Name
       value: colliderAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304902749086104658, guid: f5947373439eb1249b0c7b41b5495c9f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -584,7 +596,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_AngularDrag
@@ -596,7 +612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_GravityScale
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1307782982, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_CollisionDetection
@@ -635,8 +651,16 @@ PrefabInstance:
       value: -3.5702577
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180425, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899560726281180425, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899560726281180425, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_RootOrder
@@ -8063,6 +8087,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164338785613692004, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164338785613692005, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164338785613692005, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5164338785613692006, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
