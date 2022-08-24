@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+    public static Wall current;
+
+    public static bool hitByLaser = false;
+
     private Collider2D breakableWallCollider;
 
     public GameObject brokenWallAudio;
@@ -31,6 +35,11 @@ public class Wall : MonoBehaviour
                 brokenWallAudio.GetComponent<AudioSource>().mute = false;
             }
         }
+
+        if (hitByLaser)
+        {
+            HitByLaser();
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -39,11 +48,14 @@ public class Wall : MonoBehaviour
             breakableWallCollider.enabled = false;
             brokenWallCollider.SetActive(true);
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
-
-            // if (collision.collider.gameObject.GetComponent<Rigidbody2D>().velocity.x > 0 ||
-            //     collision.collider.gameObject.GetComponent<Rigidbody2D>().velocity.y > 0)
-            // {
-            // }
         }
+    }
+    
+    public void HitByLaser()
+    {
+        breakableWallCollider.enabled = false;
+        brokenWallCollider.SetActive(true);
+        GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
+        hitByLaser = false;
     }
 }

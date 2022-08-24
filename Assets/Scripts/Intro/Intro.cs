@@ -13,6 +13,7 @@ public class Intro : MonoBehaviour
     public GameObject introNine;
     public GameObject leftKnob;
     public GameObject rightKnob;
+    public GameObject xButtonOutline;
     public float timerKnob;
 
     [Space(10)]
@@ -62,11 +63,13 @@ public class Intro : MonoBehaviour
         {
             leftKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
             rightKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            xButtonOutline.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         }
         if (timerKnob <= -0.5f)
         {
             leftKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
             rightKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+            xButtonOutline.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
             timerKnob = 0.5f;
         }
 

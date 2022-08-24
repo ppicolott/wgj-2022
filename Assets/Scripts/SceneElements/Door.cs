@@ -14,11 +14,5 @@ public class Door : MonoBehaviour
             rotationVector.z -= rotationSpeed;
             transform.rotation = Quaternion.Euler(rotationVector);
         }
-        if (collision.collider.gameObject.name.Contains("Head") || collision.collider.gameObject.name.Contains("Feet"))
-        {
-            // var rotationVector = transform.rotation.eulerAngles;
-            // rotationVector.z += rotationSpeed;
-            // transform.rotation = Quaternion.Euler(rotationVector);
-        }
     }
 }

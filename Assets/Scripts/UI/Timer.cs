@@ -6,15 +6,27 @@ using UnityEngine.InputSystem;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer current;
+    public int levelNumber;
     private float timer;
     public TextMeshProUGUI timerText;
 
     private void Start()
     {
-        timer = 120f;
+        current = this;
+
+        switch (levelNumber)
+        {
+            case 1:
+                timer = 30f;
+                break;
+            case 2:
+                timer = 30f;
+                break;
+        }
     }
 
-    void Update()
+    private void Update()
     {
         if (timer > 0)
         {

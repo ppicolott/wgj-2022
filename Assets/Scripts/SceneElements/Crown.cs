@@ -33,7 +33,28 @@ public class Crown : MonoBehaviour
             {
                 timer = 0f;
                 nextLevel = false;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+
+                switch (Timer.current.levelNumber)
+                {
+                    case 1:
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelTwo");
+                        break;
+                    case 2:
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        break;
+                    case 3:
+                        //UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        break;
+                    case 4:
+                        //UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        break;
+                    case 5:
+                        //UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        break;
+                    case 6:
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        break;
+                }
             }
         }
     }

@@ -11,14 +11,14 @@ public class GameControls : MonoBehaviour
 
     void Start()
     {
-        rotationSpeed = 1.5f;
+        rotationSpeed = 3.5f;
     }
 
     void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            ExitToMainMenu();
         }
 
         if (Keyboard.current.qKey.isPressed)
@@ -41,16 +41,10 @@ public class GameControls : MonoBehaviour
             rotationVectorCam.z -= rotationSpeed;
             GameObject.Find("Duck").transform.rotation = Quaternion.Euler(rotationVectorCam);
         }
+    }
 
-        // if (Mouse.current.rightButton.wasPressedThisFrame)
-        // {
-        //     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        //     Vector3 lookAt = mousePos - GameObject.Find("Duck").transform.position;
-        //     float angle = Mathf.Atan2(lookAt.y, lookAt.x) * Mathf.Rad2Deg + 15f;
-        //     GetComponent<Rigidbody2D>().rotation = angle;
-        //     GameObject.Find("Duck").GetComponent<Rigidbody2D>().rotation = angle;
-        //     // transform.rotation = Quaternion.Euler(angle, angle, angle);
-        //     // GameObject.Find("Duck").transform.rotation = Quaternion.Euler(angle, angle, angle);
-        // }
+    public void ExitToMainMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

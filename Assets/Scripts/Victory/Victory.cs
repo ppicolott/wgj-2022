@@ -13,6 +13,7 @@ public class Victory : MonoBehaviour
     private int introSequence;
     public GameObject leftKnob;
     public GameObject rightKnob;
+    public GameObject xButtonOutline;
     public float timerKnob;
     public TextMeshProUGUI victoryText;
     public static bool audioPlaying = true;
@@ -37,16 +38,7 @@ public class Victory : MonoBehaviour
         if (Mouse.current.rightButton.wasPressedThisFrame || Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame ||
             Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.backspaceKey.wasPressedThisFrame)
         {
-            if (AudioLangController.current.audioSystem)
-            {
-                audioPlaying = true;
-            }
-            else
-            {
-                audioPlaying = true;
-            }
-            AudioLangController.current.restart = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            ExitToMainMenu();
         }
 
         timerKnob -= Time.deltaTime;
@@ -55,11 +47,13 @@ public class Victory : MonoBehaviour
         {
             leftKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
             rightKnob.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            xButtonOutline.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         }
         if (timerKnob <= -0.5f)
         {
             leftKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
             rightKnob.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+            xButtonOutline.GetComponent<Image>().color = new Color32(0, 0, 0, 255);
             timerKnob = 0.5f;
         }
 
@@ -160,5 +154,19 @@ public class Victory : MonoBehaviour
         {
             victoryText.text = "Victoria!";
         }
+    }
+
+    public void ExitToMainMenu()
+    {
+        if (AudioLangController.current.audioSystem)
+        {
+            audioPlaying = true;
+        }
+        else
+        {
+            audioPlaying = true;
+        }
+        AudioLangController.current.restart = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

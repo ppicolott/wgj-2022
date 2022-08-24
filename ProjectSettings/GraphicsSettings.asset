@@ -64,5 +64,4 @@ GraphicsSettings:
   m_LightsUseColorTemperature: 1
   m_DefaultRenderingLayerMask: 1
   m_LogWhenShaderIsCompiled: 0
-  m_SRPDefaultSettings:
-    UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: a783c249d07582d4e911a09290541283, type: 2}
+  m_SRPDefaultSettings: {}

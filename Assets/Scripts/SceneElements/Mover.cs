@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class Mover : MonoBehaviour
 {
     float positionSpeed;
 
     void Start()
     {
-        positionSpeed = 0.05f;
+        positionSpeed = 0.12f;
     }
 
     void Update()
