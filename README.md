@@ -1,6 +1,6 @@
 # wgj-2022
 
-<b>[PT-BR]
+<b>[PT-BR]</b>
 
 O projeto wgj-2022 refere-se ao jogo Onipatente, criado durante a Women Game Jam BR 2022, durante o período de 48h. Você pode acessá-lo para mais informações, bem como para jogá-lo, em https://itch.io/jam/women-game-jam-2022/rate/1671904.
 
@@ -10,7 +10,7 @@ Esses recursos foram um fator interessante e divertido no desenvolvimento das ha
 
 Onipatente é um jogo de quebra-cabeça sobre a história de um pato fofo e comum que, ao encontrar um misterioso e precioso anel, começa a quebrar as regras ao seu redor, controlando os objetos para resolver quebra-cabeças e alcançar outros patos para recrutá-los para um novo ordem mundial em que ele é o líder.
 
-<b>[EN-US]
+<b>[EN-US]</b>
 
 The wgj-2022 project refers to the game Onipatente, created during the Women Game Jam BR 2022, during the period of 48h. You can access it for further information, as well as to play it, at https://itch.io/jam/women-game-jam-2022/rate/1671904.
 
