@@ -6,9 +6,7 @@ public class Wall : MonoBehaviour
 {
     public static Wall current;
 
-    public static bool hitByLaser = false;
-
-    private Collider2D breakableWallCollider;
+    public Collider2D breakableWallCollider;
 
     public GameObject brokenWallAudio;
     public GameObject brokenWallCollider;
@@ -35,11 +33,6 @@ public class Wall : MonoBehaviour
                 brokenWallAudio.GetComponent<AudioSource>().mute = false;
             }
         }
-
-        if (hitByLaser)
-        {
-            HitByLaser();
-        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -49,13 +42,5 @@ public class Wall : MonoBehaviour
             brokenWallCollider.SetActive(true);
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
         }
-    }
-    
-    public void HitByLaser()
-    {
-        breakableWallCollider.enabled = false;
-        brokenWallCollider.SetActive(true);
-        GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
-        hitByLaser = false;
     }
 }

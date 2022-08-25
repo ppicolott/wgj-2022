@@ -23,6 +23,18 @@ public class Timer : MonoBehaviour
             case 2:
                 timer = 30f;
                 break;
+            case 3:
+                timer = 45f;
+                break;
+            case 4:
+                timer = 40f;
+                break;
+            case 5:
+                timer = 70f;
+                break;
+            case 6:
+                timer = 150f;
+                break;
         }
     }
 

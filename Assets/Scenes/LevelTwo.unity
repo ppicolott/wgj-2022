@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_Name
-      value: Pedra fixa (1)
+      value: StaticRock(1)
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_IsActive
@@ -477,13 +477,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (5)
+      value: Thorn(5)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &407321668 stripped
@@ -553,13 +554,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (6)
+      value: Thorn(6)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &662314781 stripped
@@ -629,13 +631,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (3)
+      value: Thorn(3)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &786363925 stripped
@@ -705,13 +708,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (13)
+      value: Thorn(13)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &818126842 stripped
@@ -877,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_Name
-      value: Pedra fixa (2)
+      value: StaticRock(2)
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_IsActive
@@ -953,13 +957,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (4)
+      value: Thorn(4)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &944012614 stripped
@@ -1235,7 +1240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Size.x
-      value: 1.2969978
+      value: 1.2285293
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Size.y
@@ -1247,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Offset.x
-      value: -0.50205934
+      value: 0.42223364
       objectReference: {fileID: 0}
     - target: {fileID: 1307782983, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Offset.y
@@ -1263,11 +1268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Anchor.x
-      value: -0.44435352
+      value: 0.30877247
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Anchor.y
-      value: 0.38008207
+      value: 0.51701427
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_EnableCollision
@@ -1275,11 +1280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.5174189
+      value: -0.5489133
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -4.8322015
+      value: -4.949982
       objectReference: {fileID: 0}
     - target: {fileID: 916870069832068157, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce
@@ -1307,19 +1312,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.23
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.23
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43
+      value: -0.525
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.73
+      value: -5.255
       objectReference: {fileID: 0}
     - target: {fileID: 1899560726281180426, guid: e1c26e447faa88048be2ddb3d7ea746c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1431,13 +1436,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (10)
+      value: Thorn(10)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1116749025 stripped
@@ -1499,7 +1505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_Name
-      value: Pedra fixa
+      value: StaticRock(0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1639,13 +1645,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (8)
+      value: Thorn(8)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1147967984 stripped
@@ -1715,7 +1722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_Name
-      value: Pedra fixa (4)
+      value: StaticRock(4)
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_IsActive
@@ -1791,13 +1798,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (9)
+      value: Thorn(9)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1265536406 stripped
@@ -1948,13 +1956,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (2)
+      value: Thorn(2)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1504419373 stripped
@@ -2064,7 +2073,7 @@ PolygonCollider2D:
       - {x: -3.8898323, y: 0.49374008}
       - {x: -0.251925, y: 0.5008373}
       - {x: -0.28561115, y: -4.9570284}
-      - {x: -0.63517475, y: -5.029237}
+      - {x: -0.66666937, y: -5.163088}
       - {x: -0.39647436, y: -10.810824}
       - {x: -1.2002189, y: -11.165284}
       - {x: -8.017884, y: -11.278899}
@@ -2072,10 +2081,13 @@ PolygonCollider2D:
       - {x: -9.570064, y: -9.067702}
       - {x: -9.441235, y: -7.236332}
       - {x: -9.541126, y: -5.4180827}
-      - {x: -2.3218303, y: -5.3636465}
-      - {x: -2.2941093, y: -5.154353}
-      - {x: -2.450427, y: -4.9380813}
-      - {x: -9.648507, y: -4.9334016}
+      - {x: -2.401926, y: -5.409137}
+      - {x: -2.279499, y: -5.3989325}
+      - {x: -2.2724185, y: -5.332202}
+      - {x: -2.323264, y: -5.3360987}
+      - {x: -2.3480136, y: -5.1408772}
+      - {x: -2.5764048, y: -5.103427}
+      - {x: -9.656381, y: -5.0672526}
       - {x: -9.988536, y: -5.1958747}
       - {x: -10.046046, y: -10.794863}
       - {x: -9.901989, y: -11.769489}
@@ -2102,7 +2114,7 @@ PolygonCollider2D:
       - {x: -9.882503, y: 0.26751208}
       - {x: -7.568045, y: 0.3414843}
       - {x: -5.8315735, y: 0.42038393}
-      - {x: -5.8772936, y: 0.9666624}
+      - {x: -5.971188, y: 0.8821573}
       - {x: -6.8246975, y: 0.79521036}
       - {x: -7.615135, y: 1.4248939}
       - {x: -7.652076, y: 2.741243}
@@ -2168,9 +2180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn
+      value: Thorn(0)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1662705772 stripped
@@ -2240,7 +2253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_Name
-      value: Pedra fixa (3)
+      value: StaticRock(3)
       objectReference: {fileID: 0}
     - target: {fileID: 1793372880064028772, guid: 79b5d217bc5a4884384bbdfde4cdf3a7, type: 3}
       propertyPath: m_IsActive
@@ -2316,13 +2329,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (7)
+      value: Thorn(7)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1682856010 stripped
@@ -2515,13 +2529,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (11)
+      value: Thorn(11)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1851382641 stripped
@@ -2591,13 +2606,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (12)
+      value: Thorn(12)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &1964715989 stripped
@@ -2671,13 +2687,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_Name
-      value: Thorn (1)
+      value: Thorn(1)
       objectReference: {fileID: 0}
     - target: {fileID: 8447307639482004299, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3577397679906029334, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e62e4793f603b4fa2c0778c1816f3e, type: 3}
 --- !u!4 &2016351359 stripped

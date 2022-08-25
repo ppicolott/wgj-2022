@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
 
     void Start()
     {
-        positionSpeed = 0.12f;
+        positionSpeed = 0.12f; //0.015f;
     }
 
     void Update()
