@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UILife : MonoBehaviour
+public class Life : MonoBehaviour
 {
     public Sprite lifeSeventyFive;
     public Sprite lifeFifty;

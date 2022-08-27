@@ -5,11 +5,8 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
     public static Wall current;
-
+    public GameObject brokenWall;
     public Collider2D breakableWallCollider;
-
-    public GameObject brokenWallAudio;
-    public GameObject brokenWallCollider;
     public Sprite brokenWallSprite;
 
     private void Start()
@@ -21,16 +18,16 @@ public class Wall : MonoBehaviour
     {
         if (!AudioLangController.current.audioSystem)
         {
-            if (brokenWallAudio.activeInHierarchy)
+            if (brokenWall.activeInHierarchy)
             {
-                brokenWallAudio.GetComponent<AudioSource>().mute = true;
+                brokenWall.GetComponent<AudioSource>().mute = true;
             }
         }
         else
         {
-            if (brokenWallAudio.activeInHierarchy)
+            if (brokenWall.activeInHierarchy)
             {
-                brokenWallAudio.GetComponent<AudioSource>().mute = false;
+                brokenWall.GetComponent<AudioSource>().mute = false;
             }
         }
     }
@@ -39,7 +36,7 @@ public class Wall : MonoBehaviour
         if (collision.collider.gameObject.name.Contains("Rock"))
         {
             breakableWallCollider.enabled = false;
-            brokenWallCollider.SetActive(true);
+            brokenWall.SetActive(true);
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
         }
     }

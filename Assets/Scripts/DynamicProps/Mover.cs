@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
 
     void Start()
     {
-        positionSpeed = 0.12f; //0.015f;
+        positionSpeed = 0.12f; // 0.015f; // 0.12f;
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class Mover : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Contains("Head") || collision.gameObject.name.Contains("Feet"))
+        if (collision.gameObject.name.Contains("DuckCollider"))
         {
             collision.gameObject.transform.localPosition = Vector3.zero;
         }

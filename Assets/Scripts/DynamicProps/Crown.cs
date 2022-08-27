@@ -46,8 +46,7 @@ public class Crown : MonoBehaviour
                         UnityEngine.SceneManagement.SceneManager.LoadScene("LevelFour");
                         break;
                     case 4:
-                        //UnityEngine.SceneManagement.SceneManager.LoadScene("LevelFive");
-                        UnityEngine.SceneManagement.SceneManager.LoadScene("Victory");
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelFive");
                         break;
                     case 5:
                         UnityEngine.SceneManagement.SceneManager.LoadScene("LevelSix");
@@ -62,7 +61,7 @@ public class Crown : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Contains("Head") || collision.gameObject.name.Contains("Feet"))
+        if (collision.gameObject.name.Contains("DuckCollider"))
         {
             GetComponent<SpriteRenderer>().enabled = false;
             sucesso.Play();
