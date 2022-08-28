@@ -65,7 +65,6 @@ public class Laser : MonoBehaviour
                 }
                 if (Timer.current.levelNumber == 4)
                 {
-                    Debug.Log(hit.collider.gameObject.name);
                     if (hit.collider.gameObject.name.Contains("Breakable") && distance < 0)
                     {
                         if (gameObject.name.Equals("Laser(0)"))
@@ -156,30 +155,33 @@ public class Laser : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Timer.current.levelNumber == 2 || Timer.current.levelNumber == 6)
+        if(collision.gameObject.name.Equals("DuckCollider"))
         {
-            if (collision.gameObject.transform.position.y >= transform.position.y)
+            if (Timer.current.levelNumber == 2 || Timer.current.levelNumber == 6)
             {
-                distance = -2.5f;
-                StartCoroutine(LaserBeam(distance));
+                if (collision.gameObject.transform.position.y >= transform.position.y)
+                {
+                    distance = -2.5f;
+                    StartCoroutine(LaserBeam(distance));
+                }
+                if (collision.gameObject.transform.position.y <= transform.position.y)
+                {
+                    distance = 2.5f;
+                    StartCoroutine(LaserBeam(distance));
+                }
             }
-            if (collision.gameObject.transform.position.y <= transform.position.y)
+            if (Timer.current.levelNumber == 4 || Timer.current.levelNumber == 5)
             {
-                distance = 2.5f;
-                StartCoroutine(LaserBeam(distance));
-            }
-        }
-        if (Timer.current.levelNumber == 4 || Timer.current.levelNumber == 5)
-        {
-            if (collision.gameObject.transform.position.y >= transform.position.y)
-            {
-                distance = -10f;
-                StartCoroutine(LaserBeam(distance));
-            }
-            if (collision.gameObject.transform.position.y <= transform.position.y)
-            {
-                distance = 10f;
-                StartCoroutine(LaserBeam(distance));
+                if (collision.gameObject.transform.position.y >= transform.position.y)
+                {
+                    distance = -10f;
+                    StartCoroutine(LaserBeam(distance));
+                }
+                if (collision.gameObject.transform.position.y <= transform.position.y)
+                {
+                    distance = 10f;
+                    StartCoroutine(LaserBeam(distance));
+                }
             }
         }
     }
