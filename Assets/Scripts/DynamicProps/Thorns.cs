@@ -14,7 +14,7 @@ public class Thorns : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.gameObject.name.Contains("Head") || collision.collider.gameObject.name.Contains("Feet"))
+        if(collision.collider.gameObject.name.Contains("Duck"))
         {
             collided = true;
             if(timer <= 0)

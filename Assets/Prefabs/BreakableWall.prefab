@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 2174671861862866775}
   - component: {fileID: 1107063048770918474}
   - component: {fileID: 4957306269121083680}
-  - component: {fileID: 8140862256641134712}
+  - component: {fileID: 8451922044510502570}
   m_Layer: 0
   m_Name: BreakableWall
   m_TagString: Untagged
@@ -502,7 +502,7 @@ Transform:
   m_GameObject: {fileID: 3075429508789450309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.05, y: -0.95000005, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.21, y: 0.21, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8627393013995033297}
@@ -574,10 +574,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brokenWall: {fileID: 2291270971510985716}
-  breakableWallCollider: {fileID: 8140862256641134712}
+  breakableWallCollider: {fileID: 0}
   brokenWallSprite: {fileID: 21300000, guid: 982af37e74dd86546a20924a2b8baa74, type: 3}
---- !u!60 &8140862256641134712
-PolygonCollider2D:
+--- !u!61 &8451922044510502570
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -599,24 +599,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.8540583, y: 2.05087}
-      - {x: 0.57732826, y: 2.543315}
-      - {x: 0.76918375, y: 3.5088353}
-      - {x: 0.36880258, y: 4.532759}
-      - {x: -0.9704662, y: 4.4435105}
-      - {x: -0.88433033, y: -0.11750082}
-      - {x: -0.7847095, y: -2.5808122}
-      - {x: -1.1283637, y: -2.9690535}
-      - {x: -1.0148215, y: -4.497062}
-      - {x: 0.78189147, y: -4.4970627}
-      - {x: 1.1927058, y: -3.8035476}
-      - {x: 0.92486155, y: -1.9522175}
-      - {x: 1.2160469, y: -1.2280848}
-      - {x: 0.72713387, y: 0.26612693}
-      - {x: 0.7181287, y: 1.2795558}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Size: {x: 2.54, y: 9.32}
+  m_EdgeRadius: 0
 --- !u!1 &4050116445725296429
 GameObject:
   m_ObjectHideFlags: 0

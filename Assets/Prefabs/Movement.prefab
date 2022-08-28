@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32af3468ddbafe43998e70e885c5313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionSpeed: 0
 --- !u!61 &813443663791614454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,7 +388,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelOne
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3691702454093366888, guid: a0403aae123011941abbeb6ff3ed84f6, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a0403aae123011941abbeb6ff3ed84f6, type: 3}
 --- !u!4 &813443663269653919 stripped

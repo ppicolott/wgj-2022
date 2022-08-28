@@ -86,15 +86,15 @@ public class Laser : MonoBehaviour
                 {
                     if (hit.collider.gameObject.name.Contains("Breakable") && distance < 0)
                     {
-                        if (GameObject.Find("BreakableWall(3)").gameObject.GetComponent<PolygonCollider2D>().enabled)
+                        if (GameObject.Find("BreakableWall(3)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
                             breakWall = 1;
                         }
-                        else if (GameObject.Find("BreakableWall(2)").gameObject.GetComponent<PolygonCollider2D>().enabled)
+                        else if (GameObject.Find("BreakableWall(2)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
                             breakWall = 2;
                         }
-                        else if (GameObject.Find("BreakableWall(1)").gameObject.GetComponent<PolygonCollider2D>().enabled)
+                        else if (GameObject.Find("BreakableWall(1)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
                             breakWall = 3;
                         }

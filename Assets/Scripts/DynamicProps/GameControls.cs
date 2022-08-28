@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class GameControls : MonoBehaviour
 {
-    float rotationSpeed;
+    private float rotationSpeed;
 
     void Start()
     {
@@ -30,6 +30,27 @@ public class GameControls : MonoBehaviour
             var rotationVectorCam = GameObject.Find("Duck").transform.rotation.eulerAngles;
             rotationVectorCam.z += rotationSpeed;
             GameObject.Find("Duck").transform.rotation = Quaternion.Euler(rotationVectorCam);
+
+            if(GameObject.Find("DuckFollower") != null)
+            {
+                var rotationVectorFollower = GameObject.Find("DuckFollower").transform.rotation.eulerAngles;
+                rotationVectorFollower.z += rotationSpeed;
+                GameObject.Find("DuckFollower").transform.rotation = Quaternion.Euler(rotationVectorFollower);
+            }
+
+            if (GameObject.Find("DuckFollower(0)") != null)
+            {
+                var rotationVectorFollowerZero = GameObject.Find("DuckFollower(0)").transform.rotation.eulerAngles;
+                rotationVectorFollowerZero.z += rotationSpeed;
+                GameObject.Find("DuckFollower(0)").transform.rotation = Quaternion.Euler(rotationVectorFollowerZero);
+            }
+
+            if (GameObject.Find("DuckFollower(1)") != null)
+            {
+                var rotationVectorFollowerOne = GameObject.Find("DuckFollower(1)").transform.rotation.eulerAngles;
+                rotationVectorFollowerOne.z += rotationSpeed;
+                GameObject.Find("DuckFollower(1)").transform.rotation = Quaternion.Euler(rotationVectorFollowerOne);
+            }
 
             if (Timer.current.levelNumber == 2)
             {
@@ -80,6 +101,27 @@ public class GameControls : MonoBehaviour
             var rotationVectorCam = GameObject.Find("Duck").transform.rotation.eulerAngles;
             rotationVectorCam.z -= rotationSpeed;
             GameObject.Find("Duck").transform.rotation = Quaternion.Euler(rotationVectorCam);
+
+            if (GameObject.Find("DuckFollower") != null)
+            {
+                var rotationVectorFollower = GameObject.Find("DuckFollower").transform.rotation.eulerAngles;
+                rotationVectorFollower.z -= rotationSpeed;
+                GameObject.Find("DuckFollower").transform.rotation = Quaternion.Euler(rotationVectorFollower);
+            }
+
+            if (GameObject.Find("DuckFollower(0)") != null)
+            {
+                var rotationVectorFollowerZero = GameObject.Find("DuckFollower(0)").transform.rotation.eulerAngles;
+                rotationVectorFollowerZero.z -= rotationSpeed;
+                GameObject.Find("DuckFollower(0)").transform.rotation = Quaternion.Euler(rotationVectorFollowerZero);
+            }
+
+            if (GameObject.Find("DuckFollower(1)") != null)
+            {
+                var rotationVectorFollowerOne = GameObject.Find("DuckFollower(1)").transform.rotation.eulerAngles;
+                rotationVectorFollowerOne.z -= rotationSpeed;
+                GameObject.Find("DuckFollower(1)").transform.rotation = Quaternion.Euler(rotationVectorFollowerOne);
+            }
 
             if (Timer.current.levelNumber == 2)
             {
