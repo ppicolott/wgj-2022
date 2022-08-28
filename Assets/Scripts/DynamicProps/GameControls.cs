@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+
 
 public class GameControls : MonoBehaviour
 {
@@ -11,10 +12,10 @@ public class GameControls : MonoBehaviour
 
     void Start()
     {
-        rotationSpeed = 3.5f; // 0.5f; // 3.5f;
+        rotationSpeed = 3.5f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
@@ -31,7 +32,7 @@ public class GameControls : MonoBehaviour
             rotationVectorCam.z += rotationSpeed;
             GameObject.Find("Duck").transform.rotation = Quaternion.Euler(rotationVectorCam);
 
-            if(GameObject.Find("DuckFollower") != null)
+            if (GameObject.Find("DuckFollower") != null)
             {
                 var rotationVectorFollower = GameObject.Find("DuckFollower").transform.rotation.eulerAngles;
                 rotationVectorFollower.z += rotationSpeed;

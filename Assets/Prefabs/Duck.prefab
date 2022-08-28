@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 854387646}
-  - component: {fileID: 854387647}
+  - component: {fileID: 1785713398}
   m_Layer: 0
   m_Name: DuckCollider
   m_TagString: Untagged
@@ -116,8 +116,8 @@ Transform:
   m_Father: {fileID: 5164338785613692004}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &854387647
-PolygonCollider2D:
+--- !u!58 &1785713398
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,39 +130,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.43, y: 1.99}
-    newSize: {x: 6.06, y: 10.15}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.17977715, y: 0.48710728}
-      - {x: -0.32559967, y: 0.4141959}
-      - {x: -0.36413676, y: 0.31959203}
-      - {x: -0.68769455, y: 0.23436514}
-      - {x: -0.48455048, y: 0.03128591}
-      - {x: -0.50592613, y: -0.04558012}
-      - {x: -0.40423203, y: -0.4617612}
-      - {x: -0.35084343, y: -0.51942945}
-      - {x: -0.25467056, y: -0.8618927}
-      - {x: 0.17815018, y: -0.9706869}
-      - {x: 0.2359581, y: -0.73483217}
-      - {x: 0.46088374, y: -0.6715406}
-      - {x: 0.56780624, y: -0.57556355}
-      - {x: 0.685812, y: -0.34544262}
-      - {x: 0.6419983, y: -0.07791212}
-      - {x: 0.577198, y: -0.04982117}
-      - {x: 0.4154892, y: -0.16233161}
-      - {x: 0.19475937, y: -0.176671}
-      - {x: 0.05586052, y: -0.109818965}
-      - {x: 0.022727966, y: 0.10760179}
-      - {x: -0.027140617, y: 0.42534333}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &913335238
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 913335238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5164338785613692004}

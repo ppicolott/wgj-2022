@@ -10,10 +10,10 @@ public class Mover : MonoBehaviour
 
     private void Start()
     {
-        positionSpeed = 0.12f; // 0.015f; // 0.12f;
+        positionSpeed = 0.12f;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
         {

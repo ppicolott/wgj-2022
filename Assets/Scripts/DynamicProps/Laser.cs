@@ -8,36 +8,10 @@ public class Laser : MonoBehaviour
     public LineRenderer lineRenderer;
     private float distance;
     RaycastHit2D[] targetPoint;
-    private int breakWall;
 
     private void Start()
     {
         lineRenderer.sortingOrder = -1;
-    }
-
-    private void Update()
-    {
-        if (Timer.current.levelNumber == 5)
-        {
-            if (breakWall == 1)
-            {
-                GameObject.Find("BreakableWall(3)").GetComponent<Wall>().breakableWallCollider.enabled = false;
-                GameObject.Find("BreakableWall(3)").GetComponent<Wall>().brokenWall.SetActive(true);
-                GameObject.Find("BreakableWall(3)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(3)").GetComponent<Wall>().brokenWallSprite;
-            }
-            if (breakWall == 2)
-            {
-                GameObject.Find("BreakableWall(2)").GetComponent<Wall>().breakableWallCollider.enabled = false;
-                GameObject.Find("BreakableWall(2)").GetComponent<Wall>().brokenWall.SetActive(true);
-                GameObject.Find("BreakableWall(2)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(2)").GetComponent<Wall>().brokenWallSprite;
-            }
-            if (breakWall == 3)
-            {
-                GameObject.Find("BreakableWall(1)").GetComponent<Wall>().breakableWallCollider.enabled = false;
-                GameObject.Find("BreakableWall(1)").GetComponent<Wall>().brokenWall.SetActive(true);
-                GameObject.Find("BreakableWall(1)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(1)").GetComponent<Wall>().brokenWallSprite;
-            }
-        }
     }
 
     private IEnumerator LaserBeam(float distance)
@@ -87,15 +61,23 @@ public class Laser : MonoBehaviour
                     {
                         if (GameObject.Find("BreakableWall(3)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
-                            breakWall = 1;
+                            GameObject.Find("BreakableWall(3)").GetComponent<Wall>().breakableWallCollider.enabled = false;
+                            GameObject.Find("BreakableWall(3)").GetComponent<Wall>().brokenWall.SetActive(true);
+                            GameObject.Find("BreakableWall(3)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(3)").GetComponent<Wall>().brokenWallSprite;
                         }
-                        else if (GameObject.Find("BreakableWall(2)").gameObject.GetComponent<BoxCollider2D>().enabled)
+                        else if (!GameObject.Find("BreakableWall(3)").gameObject.GetComponent<BoxCollider2D>().enabled &&
+                            GameObject.Find("BreakableWall(2)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
-                            breakWall = 2;
+                            GameObject.Find("BreakableWall(2)").GetComponent<Wall>().breakableWallCollider.enabled = false;
+                            GameObject.Find("BreakableWall(2)").GetComponent<Wall>().brokenWall.SetActive(true);
+                            GameObject.Find("BreakableWall(2)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(2)").GetComponent<Wall>().brokenWallSprite;
                         }
-                        else if (GameObject.Find("BreakableWall(1)").gameObject.GetComponent<BoxCollider2D>().enabled)
+                        else if (!GameObject.Find("BreakableWall(2)").gameObject.GetComponent<BoxCollider2D>().enabled &&
+                            GameObject.Find("BreakableWall(1)").gameObject.GetComponent<BoxCollider2D>().enabled)
                         {
-                            breakWall = 3;
+                            GameObject.Find("BreakableWall(1)").GetComponent<Wall>().breakableWallCollider.enabled = false;
+                            GameObject.Find("BreakableWall(1)").GetComponent<Wall>().brokenWall.SetActive(true);
+                            GameObject.Find("BreakableWall(1)").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BreakableWall(1)").GetComponent<Wall>().brokenWallSprite;
                         }
                     }
                 }

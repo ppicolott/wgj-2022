@@ -3321,6 +3321,11 @@ PolygonCollider2D:
       - {x: 3.5322533, y: 1.5518665}
       - {x: 1.8504549, y: 0.30901712}
   m_UseDelaunayMesh: 0
+--- !u!1 &1577597267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3456815960092401381, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
+  m_PrefabInstance: {fileID: 1846296009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1643216287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3456815960092401380, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
@@ -3632,6 +3637,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1467852722}
     m_Modifications:
+    - target: {fileID: 3456815960092401370, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3456815960092401380, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3680,7 +3689,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: DuckFollower(1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1643216291, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
 --- !u!4 &1846296010 stripped
@@ -3688,6 +3698,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3456815960092401380, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
   m_PrefabInstance: {fileID: 1846296009}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &1846296014
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577597267}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.995
 --- !u!1001 &1891821476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3991,18 +4017,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1467852722}
     m_Modifications:
-    - target: {fileID: 854387646, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 854387646, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 854387646, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 913335239, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.85
@@ -4011,8 +4025,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.85
       objectReference: {fileID: 0}
-    - target: {fileID: 1150927322, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
-      propertyPath: m_CollisionDetection
+    - target: {fileID: 1785713398, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164338785613692004, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
@@ -4059,10 +4073,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5164338785613692005, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5164338785613692006, guid: 1157e0b1a596e1046b4700e9ffd21fd4, type: 3}
       propertyPath: m_Name
       value: Duck
@@ -4093,6 +4103,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1467852722}
     m_Modifications:
+    - target: {fileID: 1643216291, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3456815960092401380, guid: 967b7ea124b78b642bfb1a674e295d9d, type: 3}
       propertyPath: m_RootOrder
       value: -1
