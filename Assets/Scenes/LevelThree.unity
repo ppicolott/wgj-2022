@@ -2327,38 +2327,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1959755889}
     m_Modifications:
-    - target: {fileID: 5276947595544747588, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Size.x
-      value: 3.4842787
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747588, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.005063
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747596, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Size.x
-      value: 3.5819597
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747596, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.1044817
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747600, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Size.x
-      value: 1.0166626
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747600, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Size.y
-      value: 10.885017
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747600, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Offset.x
-      value: 5.501277
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276947595544747600, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.09819412
-      objectReference: {fileID: 0}
     - target: {fileID: 6412811089374950682, guid: e7ec09acb5063f34e8171f6d1676c2da, type: 3}
       propertyPath: m_Name
       value: LevelThree
