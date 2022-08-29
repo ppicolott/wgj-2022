@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     public int levelNumber;
     private float timer;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI chancesText;
 
     private void Start()
     {
@@ -40,6 +41,8 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
+        chancesText.text = Duck.chances.ToString() + "x";
+
         if (timer > 0)
         {
             timer -= Time.deltaTime;
@@ -47,7 +50,41 @@ public class Timer : MonoBehaviour
         }
         if (timer <= 0 || Duck.life <= 0)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            if (Duck.chances == 2)
+            {
+                Duck.chances = 1;
+                switch (levelNumber)
+                {
+                    case 1:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelOne");
+                        break;
+                    case 2:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelTwo");
+                        break;
+                    case 3:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelThree");
+                        break;
+                    case 4:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelFour");
+                        break;
+                    case 5:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelFive");
+                        break;
+                    case 6:
+                        Duck.life = 75;
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("LevelSix");
+                        break;
+                }
+            }
+            else if (Duck.chances == 1)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            }
         }
     }
     void DisplayTime(float timeToDisplay)

@@ -8,9 +8,12 @@ public class Wall : MonoBehaviour
     public GameObject brokenWall;
     public Collider2D breakableWallCollider;
     public Sprite brokenWallSprite;
+    private ParticleSystem particles;
 
     private void Start()
     {
+        particles = GetComponent<ParticleSystem>();
+        particles.Stop();
         breakableWallCollider = GetComponent<Collider2D>();
     }
 
@@ -18,17 +21,11 @@ public class Wall : MonoBehaviour
     {
         if (!AudioLangController.current.audioSystem)
         {
-            if (brokenWall.activeInHierarchy)
-            {
-                brokenWall.GetComponent<AudioSource>().mute = true;
-            }
+            brokenWall.GetComponent<AudioSource>().mute = true;
         }
         else
         {
-            if (brokenWall.activeInHierarchy)
-            {
-                brokenWall.GetComponent<AudioSource>().mute = false;
-            }
+            brokenWall.GetComponent<AudioSource>().mute = false;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -37,6 +34,7 @@ public class Wall : MonoBehaviour
         {
             breakableWallCollider.enabled = false;
             brokenWall.SetActive(true);
+            particles.Play();
             GetComponent<SpriteRenderer>().sprite = brokenWallSprite;
         }
     }

@@ -8,9 +8,10 @@ public class Thorns : MonoBehaviour
     float timer = 0.05f;
     private bool collided = false;
 
-    private void Awake()
+    private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        GetComponent<ParticleSystem>().Stop();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,6 +22,7 @@ public class Thorns : MonoBehaviour
             {
                 audioSource.Play();
                 Duck.life -= 25;
+                GetComponent<ParticleSystem>().Play();
                 timer = 2f;
                 collided = false;
             }

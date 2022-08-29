@@ -93,6 +93,7 @@ public class Intro : MonoBehaviour
         switch (introSequence)
         {
             case 1:
+                leftKnob.SetActive(false);
                 one.SetActive(true);
                 two.SetActive(false);
                 three.SetActive(false);
@@ -107,6 +108,7 @@ public class Intro : MonoBehaviour
                 twelve.SetActive(false);
                 break;
             case 2:
+                leftKnob.SetActive(true);
                 one.SetActive(false);
                 two.SetActive(true);
                 three.SetActive(false);
@@ -233,6 +235,7 @@ public class Intro : MonoBehaviour
                 twelve.SetActive(false);
                 break;
             case 11:
+                rightKnob.SetActive(true);
                 one.SetActive(false);
                 two.SetActive(false);
                 three.SetActive(false);
@@ -247,6 +250,7 @@ public class Intro : MonoBehaviour
                 twelve.SetActive(false);
                 break;
             case 12:
+                rightKnob.SetActive(false);
                 one.SetActive(false);
                 two.SetActive(false);
                 three.SetActive(false);
