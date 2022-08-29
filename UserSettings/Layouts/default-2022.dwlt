@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 108
+  controlID: 63
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 49
+  controlID: 20
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,8 +172,8 @@ MonoBehaviour:
     y: 0
     width: 476.66666
     height: 997.3333
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 50
+  controlID: 21
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 51
+  controlID: 22
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1024,22 +1024,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/HUD
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/HUD
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Paula\Documents\[GameJam]\WGJ-2022\wgj-2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 199}
-    m_SelectedIDs: 0e650000
-    m_LastClickedID: 25870
-    m_ExpandedIDs: 00000000d8640000da640000dc640000de640000e0640000e2640000e464000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: d6640000
+    m_LastClickedID: 25814
+    m_ExpandedIDs: 00000000a8640000aa640000ac640000ae640000b0640000b2640000b464000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8640000da640000dc640000de640000e0640000e2640000e4640000
+    m_ExpandedIDs: 00000000a8640000aa640000ac640000ae640000b0640000b2640000b4640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1197,21 +1197,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: dea3ffff28a4ffff2aa6ffff34a6ffff18a9ffffdaabfffff8acffff18aeffffceafffffb8b0ffffc0b0ffffe4b0ffff9cb5ffff1cbeffff74beffff76c0ffff80c0ffff64c3ffff26c6ffff44c7ffff64c8ffff1acaffff04cbffff0ccbffff30cbffffeed7ffffb4ebffffb8ebffff06efffff0aefffffe0faffff16fbffff18fbffff1afbffff1cfbffff1efbffff20fbffff24fbffffe8600000f6600000268e0000348e0000208f0000368f0000de8f0000e88f0000e09000004492000038b5000042b5000060b800006eb80000
+      m_ExpandedIDs: 54a8ffffaea8ffffb0aaffffbaaaffff9eadffff60b0ffff7eb1ffff9eb2ffff54b4ffff3eb5ffff46b5ffff6ab5ffff3cc2ffff3cc6fffffec6ffff7ec7ffff16fbffff18fbffff1afbffff1cfbffff1efbffff6c650000826500006267000070670000026800003e680000c0680000d6680000108b00004c8b0000328c0000408c0000c48d0000ce8d0000388f00006c8f00003a910000f2910000109200002aa700005ea70000b2a7000060a900006aa9000074a90000a4aa0000baaa0000d0aa0000daab0000e8ab000040ac000004ad000040ad000046ad00001eae00002cae0000f8ae000090af0000a6af0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameControls
-        m_OriginalName: GameControls
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -5192
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -1512,9 +1512,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.2769191, y: -0.9438594, z: 0.3958471}
+    m_Target: {x: -7.265327, y: -3.9799535, z: 0.33748856}
     speed: 2
-    m_Value: {x: -3.1816707, y: -1.0080799, z: 0.39379063}
+    m_Value: {x: -7.265327, y: -3.9799535, z: 0.33748856}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1564,9 +1564,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.3643513
+    m_Target: 9.17185
     speed: 2
-    m_Value: 4.570001
+    m_Value: 9.17185
   m_Ortho:
     m_Target: 1
     speed: 2
