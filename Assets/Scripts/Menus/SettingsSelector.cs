@@ -60,7 +60,7 @@ public class SettingsSelector : MonoBehaviour
         CheckLanguage();
 
         if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame ||
-            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame) //dpad.ReadValueFromPreviousFrame() == new Vector2(0, 1)
+            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame)
         {
             //MusicSFXControl.currentMSFX.SFXPlay();
             if (selector <= 0)

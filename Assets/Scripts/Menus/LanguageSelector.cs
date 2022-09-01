@@ -28,7 +28,7 @@ public class LanguageSelector : MonoBehaviour
     void Update()
     {
         if (Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.leftArrowKey.wasPressedThisFrame ||
-            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame) //dpad.ReadValueFromPreviousFrame() == new Vector2(0, 1)
+            Gamepad.current != null && Gamepad.current.dpad.left.wasPressedThisFrame)
         {
             if (selector <= 0)
             {
